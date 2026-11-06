@@ -6,162 +6,162 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/menus",
+      "source": "/menus/",
       "destination": "/menu/",
       "permanent": true
     },
     {
-      "source": "/menu/drinks",
+      "source": "/menu/drinks/",
       "destination": "/menu/?tab=drinks",
       "permanent": true
     },
     {
-      "source": "/menu/assorted-drinks",
+      "source": "/menu/assorted-drinks/",
       "destination": "/menu/?tab=drinks",
       "permanent": true
     },
     {
-      "source": "/menu/sparkling-wines",
+      "source": "/menu/sparkling-wines/",
       "destination": "/menu/?tab=drinks#wine",
       "permanent": true
     },
     {
-      "source": "/menu/white-wines",
+      "source": "/menu/white-wines/",
       "destination": "/menu/?tab=drinks#wine",
       "permanent": true
     },
     {
-      "source": "/menu/rose-wines",
+      "source": "/menu/rose-wines/",
       "destination": "/menu/?tab=drinks#wine",
       "permanent": true
     },
     {
-      "source": "/menu/red-wines",
+      "source": "/menu/red-wines/",
       "destination": "/menu/?tab=drinks#wine",
       "permanent": true
     },
     {
-      "source": "/menu/vegetarian-entrees",
+      "source": "/menu/vegetarian-entrees/",
       "destination": "/menu/#veg-entrees",
       "permanent": true
     },
     {
-      "source": "/menu/tandoori-entrees-mains",
+      "source": "/menu/tandoori-entrees-mains/",
       "destination": "/menu/#tandoori",
       "permanent": true
     },
     {
-      "source": "/menu/non-vegetarian-mains",
+      "source": "/menu/non-vegetarian-mains/",
       "destination": "/menu/#chicken",
       "permanent": true
     },
     {
-      "source": "/menu/chicken",
+      "source": "/menu/chicken/",
       "destination": "/menu/#chicken",
       "permanent": true
     },
     {
-      "source": "/menu/lamb-goat",
+      "source": "/menu/lamb-goat/",
       "destination": "/menu/#lamb-goat",
       "permanent": true
     },
     {
-      "source": "/menu/beef",
+      "source": "/menu/beef/",
       "destination": "/menu/#beef",
       "permanent": true
     },
     {
-      "source": "/menu/seafood",
+      "source": "/menu/seafood/",
       "destination": "/menu/#seafood",
       "permanent": true
     },
     {
-      "source": "/menu/vegetarian-mains",
+      "source": "/menu/vegetarian-mains/",
       "destination": "/menu/#veg-mains",
       "permanent": true
     },
     {
-      "source": "/menu/accompaniments",
+      "source": "/menu/accompaniments/",
       "destination": "/menu/#sides",
       "permanent": true
     },
     {
-      "source": "/menu/naan-breads",
+      "source": "/menu/naan-breads/",
       "destination": "/menu/#breads",
       "permanent": true
     },
     {
-      "source": "/menu/breads",
+      "source": "/menu/breads/",
       "destination": "/menu/#breads",
       "permanent": true
     },
     {
-      "source": "/menu/gluten-free-breads",
+      "source": "/menu/gluten-free-breads/",
       "destination": "/menu/#breads",
       "permanent": true
     },
     {
-      "source": "/menu/rice-dishes",
+      "source": "/menu/rice-dishes/",
       "destination": "/menu/#rice",
       "permanent": true
     },
     {
-      "source": "/menu/our-biryani",
+      "source": "/menu/our-biryani/",
       "destination": "/menu/#biryani",
       "permanent": true
     },
     {
-      "source": "/menu/deserts",
+      "source": "/menu/deserts/",
       "destination": "/menu/#desserts",
       "permanent": true
     },
     {
-      "source": "/menu/kids-special",
+      "source": "/menu/kids-special/",
       "destination": "/menu/#kids",
       "permanent": true
     },
     {
-      "source": "/menu/street-food-specials",
+      "source": "/menu/street-food-specials/",
       "destination": "/menu/#street-food",
       "permanent": true
     },
     {
-      "source": "/menu/gurus-diet-special-menu",
+      "source": "/menu/gurus-diet-special-menu/",
       "destination": "/menu/",
       "permanent": true
     },
     {
-      "source": "/about-gurus",
+      "source": "/about-gurus/",
       "destination": "/our-story/",
       "permanent": true
     },
     {
-      "source": "/gallery",
+      "source": "/gallery/",
       "destination": "/our-story/",
       "permanent": true
     },
     {
-      "source": "/gallery/:path*",
+      "source": "/gallery/:path+/",
       "destination": "/our-story/",
       "permanent": true
     },
     {
-      "source": "/book-your-table",
+      "source": "/book-your-table/",
       "destination": "/book/",
       "permanent": true
     },
     {
-      "source": "/store",
+      "source": "/store/",
       "destination": "/grocery/",
       "permanent": true
     },
     {
-      "source": "/wp/store",
+      "source": "/wp/store/",
       "destination": "/grocery/",
       "permanent": true
     },
     {
-      "source": "/covidsafe-registration",
+      "source": "/covidsafe-registration/",
       "destination": "/",
       "permanent": true
     }
