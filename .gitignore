@@ -1,0 +1,8 @@
+# Build output (run `node site/build.js` to regenerate)
+site/dist/
+
+# Local tooling
+.claude/
+*.tmp
+.DS_Store
+Thumbs.db

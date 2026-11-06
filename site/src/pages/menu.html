@@ -1,0 +1,87 @@
+<!--
+title: Menu | Guru's Indian Cuisine, Coffs Harbour
+description: Full food and drinks menu with prices: tandoori, curries, biryani, vegetarian, vegan, gluten-free and kids meals, plus lassi, chai, beer and wine.
+page: menu
+-->
+<section class="page-hero has-img" style="--img:url(/assets/img/banner-spices.jpg)">
+  <span class="hero-mandala" data-mandala aria-hidden="true"></span>
+  <div class="container">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="/">Home</a> / Menu</p>
+      <h1>Our Menu</h1>
+      <p class="lead">From the tandoor to the curry pot: <!-- render:menu-count --> dishes made fresh in our kitchen, with vegan, gluten-free, nut-free and dairy-free choices clearly marked.</p>
+      <div class="hero-actions">
+        <a class="btn btn-chilli" href="/order/">Order Now</a>
+        <a class="btn btn-outline" href="/book/">Book a Table</a>
+      </div>
+    </div>
+  </div>
+  <div class="torn torn-bottom" aria-hidden="true"></div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+
+    <div class="menu-intro">
+      <div class="menu-tabs" role="tablist" aria-label="Menu">
+        <button type="button" role="tab" id="tab-food" aria-controls="panel-food" aria-selected="true" data-tab="food">Food</button>
+        <button type="button" role="tab" id="tab-drinks" aria-controls="panel-drinks" aria-selected="false" data-tab="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-filters" role="group" aria-label="Filter dishes">
+        <button type="button" class="chip chip-v" data-diet="v" aria-pressed="false"><svg aria-hidden="true"><use href="#i-v"/></svg>Vegan</button>
+        <button type="button" class="chip chip-gf" data-diet="gf" aria-pressed="false"><svg aria-hidden="true"><use href="#i-gf"/></svg>Gluten free</button>
+        <button type="button" class="chip chip-nf" data-diet="nf" aria-pressed="false"><svg aria-hidden="true"><use href="#i-nf"/></svg>Nut free</button>
+        <button type="button" class="chip chip-df" data-diet="df" aria-pressed="false"><svg aria-hidden="true"><use href="#i-df"/></svg>Dairy free</button>
+        <label class="menu-search">
+          <span class="sr-only">Search the menu</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 14 15.5l.3.3v.8l5 5 1.5-1.5zm-6 0A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14z"/></svg>
+          <input type="search" placeholder="Search dishes…" data-menu-search>
+        </label>
+        <button type="button" class="chip" data-print>Print menu</button>
+      </div>
+    </div>
+
+    <ul class="menu-legend" aria-label="Dietary key">
+      <li><span class="dtag dtag-v"><svg aria-hidden="true"><use href="#i-v"/></svg>Vegan</span></li>
+      <li><span class="dtag dtag-vo"><svg aria-hidden="true"><use href="#i-vo"/></svg>Vegan option, ask us</span></li>
+      <li><span class="dtag dtag-gf"><svg aria-hidden="true"><use href="#i-gf"/></svg>Gluten free</span></li>
+      <li><span class="dtag dtag-nf"><svg aria-hidden="true"><use href="#i-nf"/></svg>Nut free</span></li>
+      <li><span class="dtag dtag-df"><svg aria-hidden="true"><use href="#i-df"/></svg>Dairy free</span></li>
+      <li><span class="dtag dtag-halal"><svg aria-hidden="true"><use href="#i-halal"/></svg>Halal food available</span></li>
+    </ul>
+
+    <div class="menu-bar">
+      <nav aria-label="Food categories" data-menu-nav="food"><!-- render:menu-nav-food --></nav>
+      <nav aria-label="Drinks categories" data-menu-nav="drinks" hidden><!-- render:menu-nav-drinks --></nav>
+    </div>
+
+    <div class="menu-panel" id="panel-food" role="tabpanel" aria-labelledby="tab-food" data-panel="food">
+      <!-- render:menu-food -->
+    </div>
+
+    <div class="menu-panel" id="panel-drinks" role="tabpanel" aria-labelledby="tab-drinks" data-panel="drinks" hidden>
+      <!-- render:menu-drinks -->
+    </div>
+
+    <div class="menu-empty" data-menu-empty hidden>
+      <p>No dishes match those filters.</p>
+      <button type="button" class="btn btn-outline" data-clear-filters>Clear filters</button>
+    </div>
+
+    <p class="menu-note">Prices in Australian dollars and include GST. Our kitchen handles nuts, gluten and dairy, so please tell our team about any allergies when you order. We can cook most dishes mild, medium or hot, and can prepare meals without onion, garlic or ginger on request. Menu and prices may change.</p>
+  </div>
+</section>
+
+<section class="container cta-wrap">
+  <div class="cta-band rough" data-c="peacock">
+    <div>
+      <p class="script-kicker script-kicker-light">Hungry yet?</p>
+      <h2 class="section-title section-title-light">Dine in, take away or get it delivered</h2>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-turmeric" href="/order/">Order Now</a>
+      <a class="btn btn-ghost-light" href="/book/">Book a Table</a>
+    </div>
+  </div>
+</section>

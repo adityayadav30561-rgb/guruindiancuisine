@@ -1,0 +1,112 @@
+<!--
+title: Book a Table | Guru's Indian Cuisine, Coffs Harbour
+description: Reserve a table at Guru's Indian Cuisine, 10 Park Avenue, Coffs Harbour. Open Monday and Wednesday to Sunday, 11am to 8:30pm.
+page: book
+-->
+<section class="page-hero has-img" style="--img:url(/assets/img/banner-dining.jpg)">
+  <div class="container">
+    <div class="page-hero-inner">
+      <p class="breadcrumb"><a href="/">Home</a> / Book a Table</p>
+      <h1>Book a Table</h1>
+      <p class="lead">Birthday, date night or a big family feast: let us know when you're coming and we'll have your table ready.</p>
+    </div>
+  </div>
+  <div class="torn torn-bottom" aria-hidden="true"></div>
+</section>
+
+<section class="section-tight">
+  <div class="container layout-form">
+    <form class="form-card rough rough-paper" data-form data-subject="Table booking request" data-success="Thanks! We've received your booking request and will confirm by phone or email." action="#" method="post">
+      <p class="script-kicker">Reservation request</p>
+      <h2 class="section-title" style="font-size:clamp(1.6rem,3.2vw,2.3rem)">Your booking details</h2>
+      <p class="lead-text">We'll confirm your booking by phone or email. For tonight or for groups of 10 or more, please call us on <a href="tel:+61266130600">(02) 6613 0600</a>.</p>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="b-date">Date <span class="req">*</span></label>
+          <input id="b-date" name="date" type="date" required data-booking-date>
+          <span class="hint">Closed on Tuesdays</span>
+        </div>
+        <div class="field">
+          <label for="b-time">Time <span class="req">*</span></label>
+          <select id="b-time" name="time" required>
+            <option value="">Choose a time</option>
+            <option>11:00am</option><option>11:30am</option><option>12:00pm</option><option>12:30pm</option>
+            <option>1:00pm</option><option>1:30pm</option><option>2:00pm</option><option>2:30pm</option>
+            <option>3:00pm</option><option>3:30pm</option><option>4:00pm</option><option>4:30pm</option>
+            <option>5:00pm</option><option>5:30pm</option><option>6:00pm</option><option>6:30pm</option>
+            <option>7:00pm</option><option>7:30pm</option><option>8:00pm</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="b-guests">Guests <span class="req">*</span></label>
+          <select id="b-guests" name="guests" required>
+            <option value="">How many?</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            <option>6</option><option>7</option><option>8</option><option>9</option>
+            <option value="10+">10 or more (we'll call you)</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="b-occasion">Occasion</label>
+          <select id="b-occasion" name="occasion">
+            <option value="">None</option>
+            <option>Birthday</option><option>Anniversary</option><option>Date night</option>
+            <option>Family get-together</option><option>Business</option><option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="b-name">Your name <span class="req">*</span></label>
+          <input id="b-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="b-phone">Phone <span class="req">*</span></label>
+          <input id="b-phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+        <div class="field full">
+          <label for="b-email">Email</label>
+          <input id="b-email" name="email" type="email" autocomplete="email">
+        </div>
+        <div class="field full">
+          <label for="b-notes">Dietary needs or special requests</label>
+          <textarea id="b-notes" name="notes" placeholder="Allergies, high chair, no onion or garlic, birthday cake…"></textarea>
+        </div>
+      </div>
+
+      <div class="form-foot">
+        <button type="submit" class="btn btn-chilli btn-lg">Request booking</button>
+        <small>Your details are only used to manage your booking. See our <a href="/privacy/">privacy policy</a>.</small>
+      </div>
+      <p class="form-status" role="status" hidden></p>
+    </form>
+
+    <aside class="side-stack">
+      <div class="info-card rough" data-c="peacock">
+        <h3>Opening hours</h3>
+        <table class="hours" data-hours style="color:#fff">
+          <caption class="sr-only">Restaurant opening hours</caption>
+          <tbody>
+            <tr data-day="1"><th scope="row">Monday</th><td>11am – 8:30pm</td></tr>
+            <tr data-day="2"><th scope="row">Tuesday</th><td>Closed</td></tr>
+            <tr data-day="3"><th scope="row">Wednesday</th><td>11am – 8:30pm</td></tr>
+            <tr data-day="4"><th scope="row">Thursday</th><td>11am – 8:30pm</td></tr>
+            <tr data-day="5"><th scope="row">Friday</th><td>11am – 8:30pm</td></tr>
+            <tr data-day="6"><th scope="row">Saturday</th><td>11am – 8:30pm</td></tr>
+            <tr data-day="0"><th scope="row">Sunday</th><td>11am – 8:30pm</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="info-card rough rough-paper">
+        <h3>Prefer to call?</h3>
+        <p>For same-day bookings, large groups and functions, give us a ring.</p>
+        <p><a class="btn btn-chilli" href="tel:+61266130600">(02) 6613 0600</a></p>
+        <p><a href="tel:+61421231299">0421 231 299</a></p>
+      </div>
+      <div class="info-card rough" data-c="turmeric">
+        <h3>Find us</h3>
+        <p><strong>10 Park Avenue<br>Coffs Harbour NSW 2450</strong></p>
+        <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&amp;destination=Gurus+Indian+Cuisine+10+Park+Avenue+Coffs+Harbour+NSW+2450" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </aside>
+  </div>
+</section>

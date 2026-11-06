@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="https://gurusindiancuisine.com.au{{canonical}}">
+  <meta name="theme-color" content="#F26A1B">
+
+  <meta property="og:type" content="restaurant">
+  <meta property="og:site_name" content="Guru's Indian Cuisine">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:url" content="https://gurusindiancuisine.com.au{{canonical}}">
+  <meta property="og:image" content="https://gurusindiancuisine.com.au/assets/img/og-share.jpg">
+  <meta property="og:locale" content="en_AU">
+
+  <link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Poppins:wght@400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js" defer></script>
+  <script src="/assets/js/pages.js" defer></script>
+</head>
+<body class="{{bodyClass}}">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Shared SVG defs: hand-torn edge filter used by .rough cards -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="3" seed="7" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="12" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <!-- Dietary icons -->
+    <symbol id="i-v" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 19C5 10 11 4 20 4c0 9-6 15-15 15z"/><path d="M5 19l8-8"/>
+    </symbol>
+    <symbol id="i-vo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 19C5 10 11 4 20 4c0 9-6 15-15 15z" stroke-dasharray="3 2.5"/><path d="M5 19l8-8"/>
+    </symbol>
+    <symbol id="i-gf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21V7"/><path d="M12 7c-2-1-3-2.8-3-5 2 .8 3 2.8 3 5zm0 0c2-1 3-2.8 3-5-2 .8-3 2.8-3 5z"/>
+      <path d="M12 12c-2-.8-3.4-2.4-3.4-4.4 2 .4 3.4 2.4 3.4 4.4zm0 0c2-.8 3.4-2.4 3.4-4.4-2 .4-3.4 2.4-3.4 4.4z"/>
+      <path d="M12 17c-2-.8-3.4-2.4-3.4-4.4 2 .4 3.4 2.4 3.4 4.4zm0 0c2-.8 3.4-2.4 3.4-4.4-2 .4-3.4 2.4-3.4 4.4z"/>
+      <path d="M3.5 3.5l17 17" stroke-width="2.4"/>
+    </symbol>
+    <symbol id="i-nf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3c3.5 2.5 6 6.5 6 10.5A6 6 0 0 1 12 20a6 6 0 0 1-6-6.5C6 9.5 8.5 5.5 12 3z"/><path d="M12 8c-1 2-1 5 0 8"/>
+      <path d="M3.5 3.5l17 17" stroke-width="2.4"/>
+    </symbol>
+    <symbol id="i-df" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9.5 3h5v3l2 3.5V20a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1V9.5l2-3.5z"/><path d="M7.5 13h9"/>
+      <path d="M3.5 3.5l17 17" stroke-width="2.4"/>
+    </symbol>
+    <symbol id="i-halal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.6 2.6L16 9.5"/>
+    </symbol>
+  </svg>
+
+  {{header}}
+
+  <main id="main">
+{{content}}
+  </main>
+
+  {{footer}}
+</body>
+</html>

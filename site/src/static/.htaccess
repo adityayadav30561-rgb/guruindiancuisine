@@ -1,0 +1,48 @@
+# Guru's Indian Cuisine: Apache config (for cPanel / Apache hosting)
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Force https and drop www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://gurusindiancuisine.com.au%{REQUEST_URI} [L,R=301]
+
+# ---- 301 redirects from the old WordPress site ----
+RewriteRule ^menus/?$ /menu/ [L,R=301]
+RewriteRule ^menu/(drinks|assorted-drinks)/?$ /menu/?tab=drinks [L,R=301]
+RewriteRule ^menu/(sparkling-wines|white-wines|rose-wines|red-wines)/?$ /menu/?tab=drinks#wine [L,R=301,NE]
+RewriteRule ^menu/vegetarian-entrees/?$ /menu/#veg-entrees [L,R=301,NE]
+RewriteRule ^menu/tandoori-entrees-mains/?$ /menu/#tandoori [L,R=301,NE]
+RewriteRule ^menu/(non-vegetarian-mains|chicken)/?$ /menu/#chicken [L,R=301,NE]
+RewriteRule ^menu/lamb-goat/?$ /menu/#lamb-goat [L,R=301,NE]
+RewriteRule ^menu/beef/?$ /menu/#beef [L,R=301,NE]
+RewriteRule ^menu/seafood/?$ /menu/#seafood [L,R=301,NE]
+RewriteRule ^menu/vegetarian-mains/?$ /menu/#veg-mains [L,R=301,NE]
+RewriteRule ^menu/accompaniments/?$ /menu/#sides [L,R=301,NE]
+RewriteRule ^menu/(naan-breads|breads|gluten-free-breads)/?$ /menu/#breads [L,R=301,NE]
+RewriteRule ^menu/rice-dishes/?$ /menu/#rice [L,R=301,NE]
+RewriteRule ^menu/our-biryani/?$ /menu/#biryani [L,R=301,NE]
+RewriteRule ^menu/deserts/?$ /menu/#desserts [L,R=301,NE]
+RewriteRule ^menu/kids-special/?$ /menu/#kids [L,R=301,NE]
+RewriteRule ^menu/street-food-specials/?$ /menu/#street-food [L,R=301,NE]
+RewriteRule ^menu/gurus-diet-special-menu/?$ /menu/ [L,R=301]
+RewriteRule ^menu/.+$ /menu/ [L,R=301]
+RewriteRule ^about-gurus/?$ /our-story/ [L,R=301]
+RewriteRule ^gallery(/.*)?$ /our-story/ [L,R=301]
+RewriteRule ^book-your-table/?$ /book/ [L,R=301]
+RewriteRule ^(wp/)?store/?$ /grocery/ [L,R=301]
+RewriteRule ^covidsafe-registration/?$ / [L,R=301]
+</IfModule>
+
+# Caching for static assets
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/webp "access plus 6 months"
+ExpiresByType image/jpeg "access plus 6 months"
+ExpiresByType image/png "access plus 6 months"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType text/javascript "access plus 1 week"
+</IfModule>
